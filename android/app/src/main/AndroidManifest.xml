@@ -1,0 +1,93 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="vn.mobifone.truyenthong">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <permission
+        android:name="vn.mobifone.truyenthong.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="vn.mobifone.truyenthong.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="26" />
+
+    <application
+        android:name="vn.mobifone.truyenthong.MainApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <!--<activity
+            android:name=".SplashActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/SplashTheme"
+            android:windowSoftInputMode="adjustPan|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>-->
+        <activity
+            android:name="vn.mobifone.truyenthong.MainActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/splashScreenTheme"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.facebook.react.devsupport.DevSettingsActivity"
+            />
+		<activity
+            android:name="vn.mobifone.truyenthong.WebviewActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize" >
+        </activity>
+     
+
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <category android:name="vn.mobifone.truyenthong" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="vn.dieam.reactnativepushnotification.modules.RNPushNotificationPublisher" />
+        <receiver android:name="vn.dieam.reactnativepushnotification.modules.RNPushNotificationBootEventReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="vn.dieam.reactnativepushnotification.modules.RNPushNotificationRegistrationService" />
+        <service
+            android:name="vn.dieam.reactnativepushnotification.modules.RNPushNotificationListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <!--<meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="4c6d4501b5f14c52f5cb6ce661baeeda9de286cc"
+            />-->
+    </application>
+
+</manifest>

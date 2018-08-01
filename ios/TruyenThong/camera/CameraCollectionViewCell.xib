@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CameraCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="193" height="138"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="193" height="138"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_camera" translatesAutoresizingMaskIntoConstraints="NO" id="7aF-kh-WIP">
+                        <rect key="frame" x="64.5" y="37" width="64" height="64"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="64" id="F4p-kY-wxk"/>
+                            <constraint firstAttribute="height" constant="64" id="TRQ-gg-j9Y"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.86691623267222218" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="7aF-kh-WIP" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="IAS-77-p1j"/>
+                <constraint firstItem="7aF-kh-WIP" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="aXl-ir-hQE"/>
+            </constraints>
+            <size key="customSize" width="193" height="138"/>
+            <point key="canvasLocation" x="14.5" y="96"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ico_camera" width="128" height="128"/>
+    </resources>
+</document>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- dimens for camera player -->
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="item_offset">10dp</dimen>
+    <dimen name="detail_backdrop_height">150dp</dimen>
+    <dimen name="backdrop_title">30dp</dimen>
+    <dimen name="backdrop_subtitle">18dp</dimen>
+    <dimen name="card_margin">1dp</dimen>
+    <dimen name="card_album_radius">0dp</dimen>
+    <dimen name="album_cover_height">160dp</dimen>
+    <dimen name="album_title_padding">10dp</dimen>
+    <dimen name="album_title">15dp</dimen>
+    <dimen name="songs_count_padding_bottom">5dp</dimen>
+    <dimen name="songs_count">12dp</dimen>
+    <dimen name="ic_album_overflow_width">20dp</dimen>
+    <dimen name="ic_album_overflow_height">30dp</dimen>
+    <dimen name="ic_album_overflow_margin_top">10dp</dimen>
+
+
+    <dimen name="dots_height">30dp</dimen>
+    <dimen name="dots_margin_bottom">50dp</dimen>
+
+    <!-- dimens for VideoList2Activity activity -->
+    <dimen name="height_header">52.0dip</dimen>
+    <dimen name="height_btn_xlarge">43.0dip</dimen>
+    <dimen name="padding_margin_xsmall">5.0dip</dimen>
+    <dimen name="height_btn_large">40.0dip</dimen>
+    <dimen name="text_size_large">18.0dp</dimen>
+    <dimen name="height_btn_small">34.0dip</dimen>
+    <dimen name="text_size_nomal">16.0dp</dimen>
+    <dimen name="width_btn_dialog">80.0dip</dimen>
+
+    <dimen name="text_size_xlarge">20.0dp</dimen>
+    <dimen name="padding_margin_small">8.0dp</dimen>
+    <dimen name="height_line">0.5dp</dimen>
+
+</resources>

@@ -1,0 +1,26 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="vn.ruby.kingle.reactnativeijkplayer">
+    <application
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activities.VideoListActivity"
+            android:theme="@style/AppTheme"
+            android:label="Danh sách Camera"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity
+            android:name=".activities.VideoList2Activity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"
+            android:label="Danh sách Camera"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity
+            android:label="Camera"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name=".activities.FullScreenVideoActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity
+            android:name=".application.AppActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"></activity>
+    </application>
+</manifest>
